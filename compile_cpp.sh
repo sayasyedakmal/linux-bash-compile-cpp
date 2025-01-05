@@ -34,6 +34,8 @@ fi
 #Define the output executable name (based on the parent directory name)
 EXEC_NAME="$DEBUG_DIR/$PARENT_DIR_NAME"
 
+echo "Compilation start......."
+
 #Run clang++ to compile with debug mode and C++17 standard
 clang++ -std=c++17 -ggdb -g -O0 "$SOURCE_FILE" -o "$EXEC_NAME" -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror
 
